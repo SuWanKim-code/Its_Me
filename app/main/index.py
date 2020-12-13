@@ -89,7 +89,7 @@ def Draw_Distribution(username, point):
     y_score = rv.pdf(x_score)  # 범위에 따른 확률값 구하기
 
     ax.vlines(x_score, 0, y_score, colors='steelblue', lw=5, label="{}님 현재 위치".format(username))
-    plt.legend(bbox_to_anchor=(0.7, 0.95), fontsize=8)
+    plt.legend(bbox_to_anchor=(0.65, 0.95), fontsize=8)
 
     file_save = "./app/static/img/dist/" + username + '-dist.jpg'
     plt.savefig(file_save, bbox_inches='tight')
@@ -133,7 +133,7 @@ def Draw_BarChart(username, user_df):
 
     plt.xlabel('평가기준')
     plt.ylabel('퍼센트(%)')
-    plt.legend(['평균', username], loc='upper center', bbox_to_anchor=(0.9, 0.25), ncol=1, fontsize=9)
+    plt.legend(['평균', username], loc='upper center', bbox_to_anchor=(0.85, 0.25), ncol=1, fontsize=9)
 
     plt.title("{}님의 학교생활 데이터".format(username))
 
@@ -142,10 +142,6 @@ def Draw_BarChart(username, user_df):
     plt.clf()
 
     return file_save
-
-Name = 'SuWanKim' ; Point = 800 ; user_df = [97.43, 94.85, 100.0]
-Draw_Distribution(Name, Point)
-Draw_BarChart(Name, user_df)
 
 @main.route('/success',  methods=['POST'])
 def success():
@@ -160,6 +156,10 @@ def success():
        Total = '97.43'
        # 최종 누계 포인트와 신용 등급 값
        Total_Point = 800
+       user_df = [97.43, 94.85, 100.0]
+       Draw_Distribution(Name, Total_Point)
+       Draw_BarChart(Name, user_df)
+
        # 퍼센트 계산
        rv = norm(loc = 650, scale = 300)
        percent = round(100 - rv.cdf(Total_Point) * 100, 2)

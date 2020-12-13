@@ -46,12 +46,12 @@
 
       <div class="starter-template">
         <center><h4> {{ Name }}님 금번에 적립된 It's ME 포인트는 {{ Point }}점입니다. <br>
-        이번달 적립금액은 {{ Monthly_Point }}점입니다.
+        이번달 적립 포인트는 {{ Monthly_Point }}점입니다.
         <br> <br>
         {{ Name }}님은 출결점수가 {{ Attendance }}%, 과제제출 점수가 {{ Assignment }}%로 총 {{ Total }}%에 속합니다. <br>
         <img src="{{ url_for('static', filename='img/barchart/' + Name + '-barchart.jpg')}}">
         <br> <br>
-        이번달까지 신용점수 합계액은 총 {{ Total_Point }}점으로 현재 신용등급은 {{ Credit_Rate }}등급입니다.<br>
+        이번달까지 신용점수 합계 포인트는 총 {{ Total_Point }}점으로 현재 신용등급은 {{ Credit_Rate }}등급입니다.<br>
          <img src="{{ url_for('static', filename='img/dist/' + Name + '-dist.jpg')}}">
          <br>
         </center>

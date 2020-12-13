@@ -62,8 +62,6 @@ def Calculate_Rest_Point(point):
         y= rv.ppf(0.05)- point
     return int(y)
 
-
-
 def Draw_Distribution(username, point):
 
     plt.style.use('default')
@@ -83,7 +81,7 @@ def Draw_Distribution(username, point):
     plt.title("{}님의 신용분포".format(username))
 
     # 사용자 위치 표시
-    percent = 1 - rv.cdf(point)  # 퍼센트 구하기
+    percent = rv.cdf(point)  # 퍼센트 구하기
     score = rv.ppf(percent)  # 퍼센트 x값 구하기
     x_score = np.arange(score, x.max() + 1, 1)  # range 만들기
     y_score = rv.pdf(x_score)  # 범위에 따른 확률값 구하기
@@ -155,7 +153,7 @@ def success():
        Assignment = '94.85'
        Total = '97.43'
        # 최종 누계 포인트와 신용 등급 값
-       Total_Point = 800
+       Total_Point = 1000
        user_df = [97.43, 94.85, 100.0]
        Draw_Distribution(Name, Total_Point)
        Draw_BarChart(Name, user_df)

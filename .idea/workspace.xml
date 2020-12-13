@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bee8596-39fc-419c-b332-6128f8b00116" name="Default Changelist" comment="- 신용등급 기준 추가 &#10;- 이미지 수정">
+    <list default="true" id="7bee8596-39fc-419c-b332-6128f8b00116" name="Default Changelist" comment="이미지 차트 수정 , 이미지 success 함수에 넣음">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/dist/USER1-dist.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/img/dist/USER1-dist.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <updated>1607764885897</updated>
       <workItem from="1607764896790" duration="6385000" />
       <workItem from="1607771583953" duration="62000" />
-      <workItem from="1607779689873" duration="27684000" />
+      <workItem from="1607779689873" duration="28783000" />
     </task>
     <task id="LOCAL-00001" summary="ipynb 파일 추가">
       <created>1607864794161</created>
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607875155572</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="이미지 차트 수정 , 이미지 success 함수에 넣음">
+      <created>1607875844216</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607875844216</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +109,8 @@
     <MESSAGE value="ipynb 파일 추가" />
     <MESSAGE value="&quot;액&quot; -&gt; &quot;포인트&quot;로 통일" />
     <MESSAGE value="- 신용등급 기준 추가 &#10;- 이미지 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 신용등급 기준 추가 &#10;- 이미지 수정" />
+    <MESSAGE value="이미지 차트 수정 , 이미지 success 함수에 넣음" />
+    <option name="LAST_COMMIT_MESSAGE" value="이미지 차트 수정 , 이미지 success 함수에 넣음" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607767546514">
@@ -122,10 +129,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="554" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607863570223" />
-    <state x="360" y="144" key="Vcs.Push.Dialog.v2" timestamp="1607875161760">
+    <state x="360" y="144" key="Vcs.Push.Dialog.v2" timestamp="1607875846757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="360" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607875161760" />
+    <state x="360" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607875846757" />
     <state x="583" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607875108088">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
